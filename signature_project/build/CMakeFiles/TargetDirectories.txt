@@ -1,0 +1,3 @@
+/home/isalgar/my_project_repo/signature_project/build/CMakeFiles/quantum-signature.dir
+/home/isalgar/my_project_repo/signature_project/build/CMakeFiles/edit_cache.dir
+/home/isalgar/my_project_repo/signature_project/build/CMakeFiles/rebuild_cache.dir
