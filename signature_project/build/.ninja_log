@@ -1,0 +1,6 @@
+# ninja log v6
+61	299	1741293568640334082	quantum-signature	83d9e588ba5ea1
+0	26	1741551234809417404	build.ninja	cef013d1066efba4
+2	61	1741293568581332964	CMakeFiles/quantum-signature.dir/src/main.c.o	1ad0b178111114af
+3	97	1741551234823417743	CMakeFiles/quantum-signature.dir/src/main.c.o	c6cda8c9dccc076a
+97	384	1741551234917420020	quantum-signature	ab9138bc9611f9fe

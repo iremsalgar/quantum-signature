@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.15)
+project(QuantumSignature)
+
+# set(CMAKE_C_STANDARD 11)
+# set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pg")
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pg")
+# set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pg")
+# set(GRAPHVIZ_OUTPUT_FORMAT "png")
+# set(GRAPHVIZ_GRAPH_TYPE "digraph")
+# set(GRAPHVIZ_CLUSTERED_GRAPH "YES")
+
+
+# LibOQS'u bul
+find_package(liboqs REQUIRED PATHS ~/liboqs/build/install/lib/cmake/liboqs)
+
+# Çalıştırılabilir dosyayı oluştur
+add_executable(quantum-signature src/main.c)
+
+# LibOQS başlık dosyalarını ve kütüphanesini ekle
+target_include_directories(quantum-signature PRIVATE ${liboqs_INCLUDE_DIRS})
+target_link_libraries(quantum-signature PRIVATE OQS::oqs)
