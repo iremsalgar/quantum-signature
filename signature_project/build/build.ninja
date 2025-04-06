@@ -46,6 +46,7 @@ build cmake_object_order_depends_target_quantum-signature: phony || .
 
 build CMakeFiles/quantum-signature.dir/src/main.c.o: C_COMPILER__quantum-signature_unscanned_ /home/isalgar/my_project_repo/signature_project/src/main.c || cmake_object_order_depends_target_quantum-signature
   DEP_FILE = CMakeFiles/quantum-signature.dir/src/main.c.o.d
+  FLAGS = -pg
   INCLUDES = -I/home/isalgar/my_project_repo/liboqs/build/install/include
   OBJECT_DIR = CMakeFiles/quantum-signature.dir
   OBJECT_FILE_DIR = CMakeFiles/quantum-signature.dir/src
@@ -61,6 +62,7 @@ build CMakeFiles/quantum-signature.dir/src/main.c.o: C_COMPILER__quantum-signatu
 # Link the executable quantum-signature
 
 build quantum-signature: C_EXECUTABLE_LINKER__quantum-signature_ CMakeFiles/quantum-signature.dir/src/main.c.o | /usr/lib/aarch64-linux-gnu/libssl.so /usr/lib/aarch64-linux-gnu/libcrypto.so
+  FLAGS = -pg
   LINK_LIBRARIES = -Wl,-rpath,/home/isalgar/my_project_repo/liboqs/build/install/lib  -loqs  /usr/lib/aarch64-linux-gnu/libssl.so  /usr/lib/aarch64-linux-gnu/libcrypto.so
   LINK_PATH = -L/home/isalgar/my_project_repo/liboqs/build/install/lib
   OBJECT_DIR = CMakeFiles/quantum-signature.dir
