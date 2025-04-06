@@ -7,6 +7,7 @@
 3-void poly_uniform_eta(poly *a, const uint8_t seed[CRHBYTES], uint16_t nonce)
 
 
+```
 #include <arm_neon.h>
 void ntt(int32_t a[N]) {
   uint32_t len, start, j, k;
@@ -27,6 +28,8 @@ void ntt(int32_t a[N]) {
     }
   }
 }
+```
+```
 
 void poly_pointwise_montgomery(poly *c, const poly *a, const poly *b) {
   for(int i=0; i<N; i+=4) {
@@ -36,6 +39,7 @@ void poly_pointwise_montgomery(poly *c, const poly *a, const poly *b) {
     vst1q_s32(&c->coeffs[i], c_vec);
   }
 }
+```
 
 
 
